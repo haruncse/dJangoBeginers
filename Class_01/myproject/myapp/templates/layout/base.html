@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Default Page Title{% endblock %}</title>
+</head>
+<body>
+
+    <!-- Include Header -->
+    {% include "layout/header.html" %}
+
+    <!-- Main Content -->
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!-- Include Footer -->
+    {% include "layout/footer.html" %}
+
+</body>
+</html>
